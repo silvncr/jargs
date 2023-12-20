@@ -11,7 +11,7 @@ class Argument:
 		self,
 		name: str,
 		short_name: typing.Optional[str],
-		type: type[typing.Union[bool, str]],
+		type: typing.Type[typing.Union[bool, str]],
 		default: typing.Union[typing.Any, typing.Optional[bool]],
 		multiple: typing.Optional[bool],
 		help: str,
@@ -67,7 +67,7 @@ class BooleanAction(argparse.Action):
 		)
 
 class Parser:
-	def __init__(self, args: list[Argument]):
+	def __init__(self, args: typing.List[Argument]):
 		self.argparse = argparse.ArgumentParser()
 		for arg in args:
 			if arg.type == bool:

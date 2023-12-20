@@ -15,7 +15,7 @@ setup(
 	packages=['jargs'],
 	package_data={},
 	setup_requires=['pytest_runner'],
-	python_requires='>=3.12',
+	python_requires='>=3.6',
 	scripts=[],
 	tests_require=['pytest'],
 	entry_points={},

@@ -10,7 +10,7 @@ simplifying args jargon
 
 Provides a simpler way to create commandline arguments.
 
-> Tested on Windows 10 with Python 3.12.
+> Works on Python 3.6 and above. Tested on Windows 10.
 
 ## Contents
 
